@@ -1,0 +1,23 @@
+@use '../../variables' as *;
+
+.c-optionbox {
+    display: block;
+    height: 50px;
+    padding: $input_text_space;
+    border: none;
+    box-sizing: border-box;
+    background-color: $main-color-soft;
+    font-size: $font-size_default;
+    
+    @include media('sp') {
+        height: 40px;
+    }
+
+    &--primary {
+        width: 80%;
+    }
+
+    &--left {
+        width: 100%;
+    }
+}

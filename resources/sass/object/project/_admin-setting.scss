@@ -1,0 +1,12 @@
+@use '../../variables' as *;
+
+.p-adminSetting {
+    margin: $space_m auto;
+    width: 60%;
+    overflow: hidden;
+
+    &__icon {
+        margin-left: $space_m;
+    }
+
+}

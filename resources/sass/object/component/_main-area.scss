@@ -1,0 +1,12 @@
+@use '../../variables' as *;
+
+.c-mainArea {
+  display: flex;
+  justify-content: space-between;
+  @include media('tab') {
+    flex-direction: column;
+  }
+  @include media('sp') {
+    flex-direction: column;
+  }
+}

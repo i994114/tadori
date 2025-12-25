@@ -1,0 +1,29 @@
+@use '../../variables' as *;
+
+.c-breadcrumb {
+    font-size: $font-size_m;
+    margin-bottom: 16px;
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @include media('sp') {
+            display: block;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        & + li::before {
+            content: ">";
+            margin: 0 $space_m;
+        }
+    }
+
+}

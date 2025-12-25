@@ -1,0 +1,59 @@
+
+@use '../../variables' as *;
+
+.c-title {
+    color: $main-color;
+    
+    &--inner {
+        font-size: $font-size_2xl;
+
+        padding-top: $space_xxl;
+        padding-bottom: $space_3l;
+        margin: 0 auto;
+        text-align: center;
+    
+        @include media('tab') {
+            font-size: $font-size_xxl;
+            padding-top: $space_xl;
+            padding-bottom: $space_xxl;
+        }
+    
+        @include media('sp') {
+            font-size: $font-size_xl;
+            padding-top: $space_l;
+            padding-bottom: $space_xl;
+        }
+    }
+    
+    &--outer {
+        font-size: $font-size_3l;
+
+        margin-bottom: $space_4l;
+        text-align: center;
+    
+        @include media('tab') {
+            font-size: $font-size_xxl;
+            margin-bottom: $space_3l;
+        }
+    
+        @include media('sp') {
+            font-size: $font-size_xl;
+            margin-bottom: $space_xxl;
+        }
+    }
+
+    &--medium {
+        margin-bottom: $space_l;
+        font-size: $font-size_xl;
+    
+        @include media('tab') {
+            margin-bottom: $space_m;
+            font-size: $font-size_l;
+        }
+    
+        @include media('sp') {
+            margin-bottom: $space_s;
+            font-size: $font-size_default;
+        }
+    }
+}

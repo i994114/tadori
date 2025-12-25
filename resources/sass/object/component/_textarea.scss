@@ -1,0 +1,11 @@
+@use '../../variables' as *;
+
+.c-textarea {
+    width: 100%;
+    height: 300px;
+    padding: $input_text_space;
+    border: none;
+    box-sizing: border-box;
+    background-color: $main-color-soft;
+    font-size: $font-size_default;
+}

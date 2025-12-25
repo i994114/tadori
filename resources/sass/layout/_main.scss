@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+.l-main {
+    max-width: $site-width;
+    margin: 70px auto;
+    box-sizing: border-box;
+    padding-bottom: $space_l;
+    @include media('tab') {
+        margin: 50px auto;
+    }
+
+    @include media('sp') {
+        margin: 30px auto;
+    }
+
+}

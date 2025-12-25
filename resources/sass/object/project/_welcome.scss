@@ -1,0 +1,356 @@
+@use '../../variables' as *;
+* {
+    //outline: 1px solid red; /* 枠線を赤で表示 */
+}
+
+
+.p-welcome {
+
+    /* ヒーロー */
+    &__hero {
+        background-image: url('/storage/uploads/top_img7501273401247.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 100vh;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 3rem;
+        padding-top: 5vh;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35); /* 半透明オーバーレイ */
+        }
+
+        @include media('tab') {
+            padding: 5vh 1rem;
+            height: 80vh;
+            background-position: 50% 30%;
+        }
+
+        @include media('sp') {
+            padding: 5vh 1rem;
+            height: 70vh;
+        }
+    }
+
+
+    &__heroContent {
+        position: relative; /* オーバーレイの上に表示する */
+        color: $font-color_sub;
+        z-index: 2;
+    }
+
+    &__heroTitle {
+        font-size: 8rem;
+        margin: 0;
+        font-weight: bold;
+
+        @include media('tab') {
+            font-size: 6rem;
+        }
+
+        @include media('sp') {
+            font-size: 4rem;
+        }
+
+    }
+
+    &__heroSub {
+        font-size: 1.5rem;
+        margin-top: $space_l;
+
+        @include media('tab') {
+            margin-top: 0;
+        }
+
+        @include media('sp') {
+            font-size: 1rem;
+        }
+
+    }
+    /* 悩み */
+    &__problemArea {
+        position: relative;
+        width: 100%;
+        &--dark {
+            background-color: $gray;
+        }
+        &--light {
+            background-color: $accent-color;
+        }
+    }
+
+    &__main {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 5vw;
+    }
+
+    &__sectionHead {
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 3vw;
+        padding: 5vw;
+
+        @include media('tab') {
+            font-size: 2rem;
+        }
+
+        @include media('sp') {
+            font-size: 1.5rem;
+        }
+
+        &--light {
+            color: $font-color_sub;
+        }
+    }
+
+    &__listHead {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: $space_m;
+
+        @include media('sp') {
+            font-size: 1.2rem;
+        }
+
+        &--unhighlighted {
+            color: $white;
+        }
+
+        &--highlighted {
+            display: inline;
+            background: linear-gradient(transparent 50%, yellow);
+            background-repeat: repeat-x;
+            padding-bottom: 0.2em;
+        }
+    }
+
+    &__listText {
+        padding: $space_m $space_m $space_l $space_m;
+        text-align: center;
+    }
+
+    &__problemLists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+        position: relative;
+
+        @include media('tab') {
+            flex-wrap: wrap;
+        }
+
+        @include media('sp') {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+    }
+
+    &__problemList {
+        position: relative;
+        height: auto;
+        width: 30%;
+        margin-top: 40px;
+        @extend .fade-in-up;
+
+        @include media('tab-down') {
+            width: 100%;
+            text-align: center;
+        }
+
+        &--unhighlighted {
+            color: #999;
+            background-color: #333;
+        }
+
+        &--highlighted {
+            background-color: $white;
+        }
+
+    }
+
+    &__problemImg {
+        position: relative;
+        top: -3vw;
+        left: 50%;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        transform: translateX(-50%); /* 自身の幅の半分だけ左に戻して、中央にピッタリ */
+
+        @include media('tab') {
+            transform: none;
+            left: 0;
+        }
+
+        @include media('sp') {
+            left: 0;
+            transform: none;
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    /* 親近感 */
+    &__affinityArea {
+        background-color: #f9f9f9;
+        padding: 80px 20px;
+        text-align: center;
+        color: #333;
+        font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    }
+
+    &__leadText {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        font-weight: 500;
+        color: #444;
+
+        @include media('sp') {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__storyText {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: #666;
+        margin-bottom: $space_4l;
+        position: relative;
+
+       @include media('sp') {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+ 
+        // 左右に軽い線を入れて視覚的に文章を囲む
+        &::before,
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            background-color: $accent-color;
+            vertical-align: middle;
+            margin: 0 $space_m;
+        }
+    }
+
+    // 文章全体に軽いアニメーションでフェードイン
+    &__leadText,
+    &__storyText {
+        @extend .fade-in-up
+    }
+
+    &__stepListArea {
+        background-color: $base-color;
+    }
+
+    &__ctaArea {
+        background-color: $main-color-soft;
+        padding: 6vw 0;
+        text-align: center;
+    }
+
+    &__sentence {
+        font-size: 1.2rem;
+        color: $sub-color;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    &__qas {
+        display: flex;
+        flex-direction: column;
+        gap: $space_3l;
+        margin-top: $space_3l;
+    }
+
+    &__qa {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: $space_m;
+        box-shadow: $shape-shadow;
+        transition: background-color 0.3s;
+
+        @include media('sp') {
+            padding: $space_l;
+        }
+
+        &--left {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__qaMark {
+        width: 70px;
+        color: #E5E5E5;
+        font-weight: bold;
+        font-size: 4em;
+    }
+
+    &__question {
+        display: flex;
+        align-items: center;
+    }
+
+    &__answer {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+
+    &__supportArea {
+        background-color: $base-color;
+    }
+
+    &__contactForm {
+        width: 70%;
+        margin: 0 auto;
+        
+        @include media('sp') {
+            width: 100%;
+        }
+    }
+
+    &__sendBtnArea {
+        text-align: center;
+    }
+}
+
+//共通アニメーション設定
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.2s;
+}
+
+// フェードインアニメーション
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

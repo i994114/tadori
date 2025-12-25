@@ -1,0 +1,38 @@
+@use '../../variables' as *;
+
+.c-msg {
+    background-color: aqua;
+    &__list {
+        padding: $space_s;
+        display: flex;
+        background-color: blanchedalmond;
+        &--left {
+            background-color: #f6e2df;
+            text-align: left;
+            justify-content: flex-start;
+        }
+        &--right {
+            background-color: #d2eaf0;
+            text-align: right;
+            justify-content: flex-end;
+        }
+    }
+
+
+
+    &__publicMsgList {
+        height: auto;
+        &--outside {
+            background-color: blueviolet;
+            width: 50%;
+        }
+        &--inside {
+            background-color: burlywood;
+            width: 40%;
+            padding: $space_l $space_xxl;
+        }
+        &--spaced {
+            margin-bottom: $space_m;
+        }
+    }
+}

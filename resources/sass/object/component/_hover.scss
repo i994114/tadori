@@ -1,0 +1,7 @@
+@use '../../variables' as *;
+
+.c-hover:hover {
+    background-color: $color_corp;
+    transition: .3s;
+    cursor: pointer;
+}

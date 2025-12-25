@@ -1,0 +1,26 @@
+@use '../../variables' as *;
+
+//ページネーションのコンテナ
+.c-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $space_xxl;
+
+    &__pageItem {
+        margin: 0 $space_s;
+        padding: $space_s $space_m;
+        background-color: $base-color;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $color_corp;
+        }
+    }
+
+    //現在のページ
+    &--active {
+        background-color: $secondary-color;
+    }
+}

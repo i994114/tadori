@@ -1,0 +1,22 @@
+@use '../../variables' as *;
+
+.c-linkSentence {
+    padding-bottom: $space_m;
+    margin: $space_3l auto 0 auto;
+    overflow: hidden;
+    text-align: right;
+    
+    &--shrink {
+        width: 60%;
+    }
+
+    &--expand {
+        width: 100%;
+    }
+
+    &__word {
+        color: $font-color_link;
+        padding: $space_s 0;  
+        display: inline-block;  //クリック範囲を広げるためのもの
+    }
+}

@@ -1,0 +1,63 @@
+@use '../../variables' as *;
+
+.p-stepShow {
+    &__item {
+        margin-bottom: $space_xxl;
+    }
+
+    &__intro {
+        font-size: $font-size_l;
+        font-weight: bold;
+
+        @include media('sp') {
+            font-size: $font-size_default;
+        }
+    }
+
+    &__stepHead {
+        display: flex;
+        justify-content: space-between;
+
+        &--left {
+            display: flex;
+        }
+
+        &--right {
+            font-size: $font-size_l;
+        }
+    }
+
+    &__categoryName {
+        background-color: $main-color-soft;
+        padding: $space_s;
+        border-radius: $shape-radius;
+        margin-left: $space_l;
+    }
+
+    &__detail {
+        word-wrap: break-word; /* 単語内でも折り返し */
+    }
+
+    &__caption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media('xs') {
+            display: block;
+        }
+    }
+
+    &__userOptions {
+        display: flex;
+        justify-content: flex-end;
+        gap: $space_l;
+
+    }
+
+    &__image {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        text-align: center;
+    }
+}

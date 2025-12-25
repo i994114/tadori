@@ -1,0 +1,33 @@
+@use '../../variables' as *;
+
+.p-searchArea {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include media('tab') {
+        margin-top: $space_l;
+    }
+
+    &--left {
+        width: 90%;
+        justify-content: center;
+    }
+
+    &--right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 50px; //inputタグと同じ長さ
+        margin-bottom: $space-s;    //inputタグと同じ長さ
+        background-color: $surface-color;
+        box-sizing: border-box;
+
+        @include media('sp') {
+            height: 40px;
+            margin-bottom: $space-s;
+        }
+    }
+
+}

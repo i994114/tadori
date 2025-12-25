@@ -1,0 +1,135 @@
+@use '../../variables' as *;
+
+.c-stepList {
+
+    &__item {
+        background-color: #fff;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: $shape-radius;
+        padding: $space_l;
+    }
+
+    //一覧表示用
+    &__itemHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $space_xl;
+
+        @include media('tab-down') {
+            display: block;
+        }
+
+        &--left {
+            width: 70%;
+
+            @include media('tab') {
+                width: 100%;
+            }
+
+        }
+
+        &--right {
+            width: 30%;
+
+            @include media('tab') {
+                width: 55%;
+            }
+
+            @include media('sp') {
+                width: 65%;
+            }
+
+            @include media('xs') {
+                width: 80%;
+            }
+
+        }
+    }
+
+    &__title {
+        font-size: $font-size_l;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @include media('sp') {
+            font-size: $font-size_default;
+        }
+
+    }
+
+    &__time,
+    &__challenges {
+        font-size: $font-size_m;
+        color: #555;
+        margin-bottom: $space_s;
+    }
+
+    &__category {
+        display: flex;
+        justify-content: center;
+        gap: $space_m;
+        background-color: $main-color-soft;
+        padding: $space_s;
+        border-radius: $shape-radius;
+        font-size: $font-size_m;
+
+        &--stretch {
+            width: 60%;
+        }
+    }
+
+    &__foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: $space_m;
+
+        @include media('xs') {
+            display: block;
+        }
+    }
+
+    &__date {
+        font-size: $font-size_m;
+    }
+
+    &__ownerInfo {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 70%;
+
+        @include media('tab') {
+            width: 60%;
+        }
+
+        @include media('sp') {
+            width: 40%;
+        }
+
+        @include media('xs') {
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+    }
+
+    &__ownerName {
+        margin-left: $space_s;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__progressBar {
+        margin-top: $space_s;
+    }
+
+    &__icon {
+        text-align: right;
+    }
+}

@@ -1,0 +1,40 @@
+@use '../variables' as *;
+
+.l-footer {
+    width: 100%;
+    text-align: center;
+    background-color: #DFE3E8;  //$base-colorをすこし暗くした色
+    padding-bottom: $space_s;
+    color: $font-color_footer;
+    box-sizing: border-box;
+    font-size: $font-size_s;
+
+    @include media('sp') {
+        padding: $space_m;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: $space_m;
+        padding: $space_s;
+
+        @include media('sp') {
+            gap: 0;
+        }
+
+    }
+
+
+    &__copy {
+        font-size: $font-size_s;
+        line-height: 1.6;
+    }
+
+    &__companyName {
+        text-decoration: underline;
+        padding: $space_s;
+    }
+}
+

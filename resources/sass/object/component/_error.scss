@@ -1,0 +1,8 @@
+@use '../../variables' as *;
+
+.c-error {
+  margin-bottom: $space_s;
+  &__invalid {
+    color: $red;
+  }
+}

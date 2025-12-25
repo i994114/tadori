@@ -1,0 +1,167 @@
+@use '../variables' as *;
+
+.l-sidebar {
+    width: 25%;
+    height: auto;
+    background-color: $surface-color;
+    padding: $space_xl $space_l;
+    box-sizing: border-box;
+
+    @include media('tab') {
+        width: 80%;
+        margin: $space_l auto;
+    }
+
+    @include media('sp') {
+        width: 90%;
+        margin: $space_l auto;
+    }
+
+    @include media('xs') {
+        width: 95%;
+        margin: $space_l auto;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: $space_m;
+    }
+
+    //------------
+    // サイドバー左
+    //------------
+    &__form {
+        margin: 0 auto;
+    }
+
+    &__unit {
+        margin-top: $space_xxl;
+        margin-bottom: $space_xl;
+    }
+
+    &__radioMenuitems {
+        display: flex;
+        flex-direction: column;
+        gap: $space_s;
+
+    }
+
+    &__searchBtnArea {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    //----------------------
+    // サイドバー右:マイページ
+    //----------------------
+    &__nav {
+        text-align: left;
+    }
+
+    &__item {
+        margin: $space_xxl auto;
+
+        @include media('tab') {
+            margin: $space_xl auto;
+            text-align: center;
+            padding: $space_l 0;
+        }
+
+        @include media('sp') {
+            margin: $space_l auto;
+            text-align: center;
+            padding: $space_m 0;
+        }
+
+        &--accent {
+            background-color: $accent-color;
+            padding: $space_m $space_xl;
+            border-radius: $btn-radius;
+        }
+
+        &--link {
+            padding: $space_m;
+        }
+    }
+    //----------------------
+    // サイドバー右:マイページ以外
+    //----------------------
+    &__rankingArea {
+        &--rest {
+            margin-top: $space_l;
+        }
+    }
+
+    &__rankingTitle {
+        font-size: $font-size_l;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: $space_s;
+        margin-bottom: $space_l;
+
+        @include media('tab') {
+            font-size: $font-size_default;
+        }
+    }
+
+    &__rankingList {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__rankHigh {
+        display: inline-block;
+        flex-shrink: 0;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 50%;
+        background-color: #efefef;
+        text-align: center;
+        margin-right: $space_s;
+
+        //トップ3の表示をキラッとした動きに
+        animation: shimmer 2s infinite linear;
+        @keyframes shimmer {
+            0%, 90%, 100% { opacity: 1; transform: scale(1); }
+            95% { opacity: 0.6; transform: scale(1.2); }
+        }
+
+        &--best1 {
+            color: gold;
+        }
+        &--best2 {
+            color: silver;
+        }
+        &--best3 {
+            color: #cd7f32;
+        }     
+    }
+
+    &__rankNormal {
+        display: inline-block;
+        flex-shrink: 0;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 50%;
+        background-color: #efefef;
+        text-align: center;
+        margin-right: $space_s;
+    }
+
+    &__rankingItem {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__stepName {
+        display: inline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

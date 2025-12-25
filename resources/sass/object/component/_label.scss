@@ -1,0 +1,32 @@
+@use '../../variables' as *;
+
+.c-label {
+    display: inline-block;
+    margin-top: $space_xl;
+    
+    &--normal {
+        margin-bottom: $space_s;
+    }
+    &__rule {
+        font-size: $font-size-m;
+        color: $gray;
+        @include media('sp') {
+            display: block;
+            font-size: $font-size-s;
+        }
+    }
+
+    @include media('tab') {
+        margin-top: $space_l;
+    }
+    
+    @include media('sp') {
+        font-size: $font-size-m;
+        margin-top: $space_m;
+    }
+    
+    &__requiredFieldMark {
+        margin-left: $space_s;
+        color: $red;
+    }
+}

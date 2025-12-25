@@ -1,0 +1,20 @@
+@use '../../variables' as *;
+
+.c-flashMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: $space_m;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    margin-top: $space_l;
+    margin-bottom: $space_xxl;
+    text-align: center;
+    z-index: 2; //ヘッダーをz-index 1で固定しているため、表示できるように2とする
+
+    @include media('sp') {
+        margin-top: $space_m;
+        margin-bottom: $space_xl;
+    }
+}

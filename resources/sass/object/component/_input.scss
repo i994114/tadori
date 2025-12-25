@@ -1,0 +1,30 @@
+@use '../../variables' as *;
+
+.c-input {
+    height: 50px;
+    padding: $input_text_space;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: $font-size_l;
+    margin-bottom: $space_s;
+    background-color: $main-color-soft;
+    display: block;
+
+    @include media('tab-down') {
+        font-size: $font-size_default;
+    }
+
+    @include media('sp') {
+        height: 40px;
+    }
+
+    &--primary {
+        width: 100%;
+    }
+
+    &--short {
+        width: 50%;
+    }
+
+}

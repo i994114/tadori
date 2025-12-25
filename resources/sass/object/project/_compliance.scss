@@ -1,0 +1,120 @@
+@use '../../variables' as *;
+
+.p-compliance {
+  font-family: $font-family_group;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: $space_xl;
+  max-width: 800px;
+  background-color: $surface-color;
+  border-radius: 8px;
+  box-shadow: $shadow-card;
+  color: $font-color_default;
+
+  &__heading {
+    &--main {
+      margin-bottom: $space_m;
+      font-size: $font-size_3l;
+      border-bottom: 2px solid $font-color_default;
+      padding-bottom: $space_s;
+    }
+
+    &--sub {
+      margin-bottom: $space_m;
+      margin-top: $space_l;
+      font-size: $font-size_xxl;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: $space_s;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: $space_xl;
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__list {
+    margin-bottom: $space_xl;
+    padding-left: $space_xl;
+
+    &--nested {
+      margin-top: $space_m;
+      padding-left: $space_xl;
+    }
+  }
+
+  &__listItem {
+    margin-bottom: $space_m;
+  }
+
+  @include media('sp') {
+    padding: $space_l;
+    max-width: 100%;
+
+    &__heading {
+      &--main {
+        font-size: $font-size_xxl;
+        padding-bottom: $space_s;
+      }
+      &--sub {
+        font-size: $font-size_l;
+        margin-top: $space_m;
+        padding-bottom: $space_s;
+      }
+    }
+
+    &__paragraph {
+      margin-bottom: $space_l;
+    }
+
+    &__list {
+      margin-bottom: $space_l;
+      padding-left: $space_l;
+
+      &--nested {
+        margin-top: $space_s;
+        padding-left: $space_m;
+      }
+    }
+
+    &__listItem {
+      margin-bottom: $space_s;
+    }
+  }
+
+  @include media('xs') {
+    padding: $space_m;
+
+    &__heading {
+      &--main {
+        font-size: $font-size_xl;
+      }
+      &--sub {
+        font-size: $font-size_m;
+      }
+    }
+
+    &__paragraph {
+      margin-bottom: $space_m;
+      font-size: $font-size_m;
+    }
+
+    &__list {
+      margin-bottom: $space_m;
+      padding-left: $space_m;
+
+      &--nested {
+        margin-top: $space_s;
+        padding-left: $space_s;
+      }
+    }
+
+    &__listItem {
+      margin-bottom: $space_s;
+      font-size: $font-size_m;
+    }
+  }
+}

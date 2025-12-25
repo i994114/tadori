@@ -1,0 +1,82 @@
+@use '../../variables' as *;
+
+.c-btn {
+    color: $font-color-sub;
+    border: none;
+    border-radius: $btn-radius;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+
+    &--wide {
+        background-color: $main-color;
+        padding: $space_m;
+        width: 40%;
+        font-size: $font-size_default;
+    }
+
+    //dangerより大きくなるように設定
+    &--primary {
+        display: block;
+        font-size: $font-size_l;
+        background-color: $main-color;
+        padding: $space_l $space_xl;
+        width: 50%;
+        margin: 0 auto;
+
+        @include media('tab-down') {
+            padding: $space_m $space_l;
+        }
+
+        @include media('sp') {
+            font-size: $font-size_default;
+        }
+
+    }
+
+    &--danger {
+        background-color: $red;
+        padding: $space_m;
+        width: 40%;
+        font-size: $font-size_default;
+
+        @include media('sp') {
+            width: 50%;
+        }
+
+        @include media('xs') {
+            font-size: $font-size_m;
+        }
+    }
+
+    &--short {
+        font-size: $font-size_l;
+        background-color: $main-color;
+        padding: $space_m;
+        width: 40%;
+    }
+
+    &--small {
+        background-color: $footer-text-color;
+        font-size: $font-size_s;
+        padding: $space_s;
+    }
+
+    &--toggleSmall {
+        font-size: $font-size_s;
+    }
+
+    &--shown {
+        background-color: $main-color;
+        padding: $space_s;
+        width: 30%;
+        font-size: $font-size_default;
+    }
+
+}
+
+

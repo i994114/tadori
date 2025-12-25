@@ -1,0 +1,81 @@
+@use '../../variables' as *;
+
+.p-slider {
+    display: flex;
+    align-items: center;
+
+    &__itemArea {
+        overflow: hidden;
+    }
+
+    &__items {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: auto;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        flex: 0 0 calc((100% - ($space_m * 2)) / 3);
+        padding: $space_m;
+        box-shadow: $shape-shadow;
+        border-radius: $shape-radius;
+        box-sizing: border-box;
+        height: 250px;
+        background-color: $surface-color;
+
+        @include media('tab') {
+            flex: 0 0 calc((100% - $space_m) / 2); //タブレット時: 2カラム
+        }
+
+        @include media('sp') {
+            flex: 0 0 100%; //スマホ時: 1カラム（フル幅）
+            height: auto;
+        }
+    }
+
+    &__prev,
+    &__next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $space_s;
+        &.is-disabled {
+            opacity: 0.4;
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+    
+    &__title {
+        font-weight: bold;
+        font-size: $font-size_l;
+
+        @include media('sp') {
+            font-size: $font-size_default;
+        }
+    }
+
+    &__category {
+        display: inline-block;
+        align-self: flex-start;
+        font-size: $font-size_m;
+        background-color: $main-color-soft;
+        border-radius: 0.4rem;
+        padding: $space_s $space_m;
+    }
+
+    &__date {
+        font-size: $font-size_m;
+    }
+
+    &_userArea {
+        display: flex;
+    }
+
+    &--empty {
+        text-align: center;
+    }
+}

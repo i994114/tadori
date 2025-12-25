@@ -1,0 +1,158 @@
+@use '../../variables' as *;
+
+.p-subStepList {
+    &__stepHeader {
+        font-size: $font-size_l;
+        margin-bottom: $space_l;
+    }
+
+    &__stepHeaderLabel {
+        font-weight: bold;
+    }
+
+    &__stepHeaderName {
+        font-weight: bold;
+    }
+
+    &__caption {
+        text-align: right;
+    }
+
+    &__inputArea {
+        display: flex;
+        align-items:flex-start;
+        width: 100%;
+        
+        &--left {
+            width: 90%;
+            justify-content: center;
+        }
+
+        &--right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+            height: 50px; //inputタグと同じ長さ
+            background-color: $surface-color;
+            box-sizing: border-box;
+            //margin-top: 26px;
+
+            @include media('sp') {
+                height: 40px;
+                margin-bottom: $space-s;
+            }
+        }
+    }
+
+    &__note {
+        margin-top: $space_l;
+        font-size: $font-size_m;
+        padding-left: $space_l;
+    }
+
+    &__list {
+        border-radius: $shape-radius;
+        overflow: hidden;
+        box-shadow: $shape-shadow;
+        margin-top: $space_xxl;
+    }
+
+    &__listRow {
+        display: grid;
+        grid-template-columns: 1fr 110px 0px;
+        align-items: center;
+        gap: $space_s;
+        padding: $space_m $space_l;
+        transition: background 0.2s;
+
+        @include media('sp') {
+            display: flex;
+            align-items: flex-end;
+            gap: $space_s;
+            padding: $space_m;
+        }
+    }
+
+    &__listRow:last-child {
+        border-bottom: none;
+    }
+
+    &__badge {
+        background: #e8efff;
+        font-size: $font-size_s;
+        font-weight: bold;
+        border-radius: $shape-radius;
+        padding: $space_s $space_m;
+        flex: 0 0 auto;
+
+        @include media('sp') {
+            align-self: flex-start;
+        }
+    }
+
+    &__stepInfo {
+        display: flex;
+        align-items: center;
+        gap: $space_m;
+        overflow: hidden;
+
+        @include media('sp') {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: $space_s;
+            width: 75%;
+        }
+    }
+
+    &__stepTitle {
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;    //テキストがはみ出したときに、末尾を「…」に置き換える
+        white-space: nowrap;    //テキストを改行させない設定
+
+        @include media('sp') {
+            font-size: $font-size_m;
+        }
+    }
+
+    &__actionArea {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: $space_s;
+
+        @include media('sp') {
+            width: 25%;
+            justify-content: flex-start;
+        }
+    }
+
+    &__sortBtnArea {
+        display: flex;
+        justify-content: center;
+        margin-top: $space_xxl;
+    }
+
+
+
+    &__clearBtn {
+        align-items: center;
+        justify-content: center;
+        gap: $space_s;
+        width: 110px;
+        padding: $space_s $space_m;
+        transition: all 0.2s;
+
+        &--done {
+            background: $green;
+        }
+
+        &--doing {
+            background: $secondary-color;
+        }
+
+    }
+
+}

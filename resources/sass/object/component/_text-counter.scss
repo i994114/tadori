@@ -1,0 +1,14 @@
+@use '../../variables' as *;
+
+.c-textCounter {
+    text-align: right;
+    font-size: $font-size_m;
+
+    &--short {
+        width: 50%;
+    }
+
+    @include media('tab') {
+        font-size: $font-size_s;
+    }
+}

@@ -1,0 +1,20 @@
+//utilityのため、複数ブロックを定義
+
+@use '../../variables' as *;
+
+.u-mt-l {
+  margin-top: $space_l;
+}
+.u-mt-4l {
+  margin-top: $space_4l;
+}
+.u-mb-l {
+  margin-bottom: $space_l;
+}
+.u-ml-m {
+  margin-left: $space_m;
+}
+.u-p-m {
+  padding: $space_m;
+}
+

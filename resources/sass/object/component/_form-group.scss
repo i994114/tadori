@@ -1,0 +1,20 @@
+@use '../../variables' as *;
+
+.c-formGroup {
+    margin: $space_m auto;
+    width: 80%;
+    //overflow: hidden;
+
+    @include media('tab') {
+        width: 70%;
+    }
+    
+    @include media('sp') {
+        width: 80%;
+    }
+
+    @include media('xs') {
+        width: 90%;
+    }
+
+}

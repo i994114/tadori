@@ -1,0 +1,20 @@
+@use '../../variables' as *;
+
+.c-container {
+  width: 70%;
+  margin: 0 auto;
+  @include media('tab') {
+    width: 80%;
+  }
+  @include media('sp') {
+    width: 90%;
+  }
+  @include media('xs') {
+    width: 95%;
+  }
+  &--colored {
+    background-color: $surface-color;
+    padding-bottom: $space_xxl;
+
+  }
+}

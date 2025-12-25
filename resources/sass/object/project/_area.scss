@@ -1,0 +1,25 @@
+@use '../../variables' as *;
+
+.c-area {
+    &__actionArea {
+        margin-top: $space_l;
+        margin-bottom: $space_xxl;
+    }
+
+    &__estimatedTimeArea {
+        font-size: $font-size-m;
+        color: $gray;
+    }
+
+    &__resetEmailBtnArea {
+        margin: $space_xl 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__deleteArea {
+        text-align: center;
+        margin-top: $space_l;
+    }
+}
