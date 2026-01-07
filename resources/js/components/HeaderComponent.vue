@@ -7,7 +7,7 @@
         <div class="l-header__container">
 
             <!-- ヘッダーロゴ -->
-            <h1 class="l-header__logo c-hover" @click="jdgNextPage">STEP</h1>
+            <h1 class="l-header__logo c-hover" @click="jdgNextPage">TADORI</h1>
 
             <!-- ヘッダーメニュ -->
             <nav>
