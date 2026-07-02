@@ -102,13 +102,13 @@ export default {
         return {
             MAX_LENGTH,
             
-            name: '',
-            email: '',
-            password: '',
-            password_confirmation: '',
+            name: 'aaa',
+            email: 'dorakue838861@gmail.com',
+            password: 'aaaa1111',
+            password_confirmation: 'aaaa1111',
             
-            agreedPrivacy: false,
-            agreedTerms: false,
+            agreedPrivacy: true,
+            agreedTerms: true,
 
             errors: [],
         };

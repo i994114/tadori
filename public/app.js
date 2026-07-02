@@ -2107,12 +2107,12 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
   data: function data() {
     return {
       MAX_LENGTH: _const__WEBPACK_IMPORTED_MODULE_0__["MAX_LENGTH"],
-      name: '',
-      email: '',
-      password: '',
-      password_confirmation: '',
-      agreedPrivacy: false,
-      agreedTerms: false,
+      name: 'aaa',
+      email: 'dorakue838861@gmail.com',
+      password: 'aaaa1111',
+      password_confirmation: 'aaaa1111',
+      agreedPrivacy: true,
+      agreedTerms: true,
       errors: []
     };
   },
@@ -41718,7 +41718,7 @@ var actions = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/Output/STEP/resources/js/router.js */"./resources/js/router.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/tadori/resources/js/router.js */"./resources/js/router.js");
 
 
 /***/ })

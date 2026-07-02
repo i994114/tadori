@@ -6142,12 +6142,12 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
   data: function data() {
     return {
       MAX_LENGTH: _const__WEBPACK_IMPORTED_MODULE_0__["MAX_LENGTH"],
-      name: '',
-      email: '',
-      password: '',
-      password_confirmation: '',
-      agreedPrivacy: false,
-      agreedTerms: false,
+      name: 'aaa',
+      email: 'dorakue838861@gmail.com',
+      password: 'aaaa1111',
+      password_confirmation: 'aaaa1111',
+      agreedPrivacy: true,
+      agreedTerms: true,
       errors: []
     };
   },
@@ -7513,7 +7513,7 @@ var render = function render() {
     on: {
       click: _vm.jdgNextPage
     }
-  }, [_vm._v("STEP")]), _vm._v(" "), _c("nav", [_c("ul", {
+  }, [_vm._v("TADORI")]), _vm._v(" "), _c("nav", [_c("ul", {
     staticClass: "l-header__nav"
   }, [!_vm.isAuthenticated ? _c("div", {
     staticClass: "l-header__items"
@@ -85018,8 +85018,8 @@ var actions = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/Output/STEP/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/Output/STEP/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/tadori/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/tadori/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
