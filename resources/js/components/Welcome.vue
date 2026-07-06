@@ -3,8 +3,8 @@
     <!-- ヒーロー画像 -->
     <section class="p-welcome__hero">
         <div class="p-welcome__heroContent">
-            <h1 class="p-welcome__heroTitle">STEP</h1>
-            <p class="p-welcome__heroSub">あなたの人生のSTEPを共有しよう</p>
+            <h1 class="p-welcome__heroTitle">TADORI</h1>
+            <p class="p-welcome__heroSub">あなたがたどった学びを、次の人へ</p>
         </div>
     </section>
 
@@ -56,7 +56,7 @@
     <!-- 解決 -->
     <section class="p-welcome__problemArea p-welcome__problemArea--light">
         <div class="p-welcome__main ">
-            <h2 class="p-welcome__sectionHead">すべてSTEPが解決します！</h2>
+            <h2 class="p-welcome__sectionHead">すべてTADORIが解決します！</h2>
 
             <div class="p-welcome__problemLists">
 
@@ -65,7 +65,7 @@
                     <div class="p-welcome__listHead">
                         <h3 class="p-welcome__listHead p-welcome__listHead--highlighted">迷ったら、先輩の学習順序を真似できる！</h3>
                     </div>
-                    <p class="p-welcome__listText">STEPでは、先輩学習者たちがたどった「学習の順序」をそのまま参考にできるため、何から始めればいいか迷うことはありません。</p>
+                    <p class="p-welcome__listText">TADORIでは、先輩学習者たちがたどった「学習の順序」をそのまま参考にできるため、何から始めればいいか迷うことはありません。</p>
                 </div>
 
                 <div class="p-welcome__problemList p-welcome__problemList--highlighted">
@@ -73,7 +73,7 @@
                     <div class="p-welcome__listHead">
                         <h3 class="p-welcome__listHead p-welcome__listHead--highlighted">進捗を見える化して挫折を防ぐ！</h3>
                     </div>
-                    <p class="p-welcome__listText">STEPでは、自分の学習進捗を一目で確認でき、他人の進捗も見られるため、独学でもモチベーションを維持しながら学習を続けられます。</p>
+                    <p class="p-welcome__listText">TADORIでは、自分の学習進捗を一目で確認でき、他人の進捗も見られるため、独学でもモチベーションを維持しながら学習を続けられます。</p>
                 </div>
 
                 <div class="p-welcome__problemList p-welcome__problemList--highlighted">
@@ -81,7 +81,7 @@
                     <div class="p-welcome__listHead">
                         <h3 class="p-welcome__listHead p-welcome__listHead--highlighted">あなたに合った教材と学習順序を提示！</h3>
                     </div>
-                    <p class="p-welcome__listText">STEPは、目的やレベルに合わせた最適な学習順序（STEP）を提案。初心者から上級者まで、自分にぴったりの学習計画で効率よく学べます。</p>
+                    <p class="p-welcome__listText">TADORIは、目的やレベルに合わせた最適な学習順序を提案。初心者から上級者まで、自分にぴったりの学習計画で効率よく学べます。</p>
                 </div>
 
             </div>
@@ -235,7 +235,7 @@ export default {
                     show: false,
                 },
                 {
-                    question: "STEPの使い方にルールはありますか？",
+                    question: "「TADORI」の使い方にルールはありますか？",
                     answer: "他のユーザーに役立つ内容であれば基本的に自由です。ただし、誹謗中傷や著作権侵害のある内容は投稿できません。", // 投稿ルールの説明
                     show: false,
                 },

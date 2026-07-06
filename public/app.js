@@ -2301,7 +2301,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         // 対応ジャンルの説明
         show: false
       }, {
-        question: "STEPの使い方にルールはありますか？",
+        question: "「TADORI」の使い方にルールはありますか？",
         answer: "他のユーザーに役立つ内容であれば基本的に自由です。ただし、誹謗中傷や著作権侵害のある内容は投稿できません。",
         // 投稿ルールの説明
         show: false
@@ -4518,9 +4518,9 @@ var staticRenderFns = [function () {
     staticClass: "p-welcome__heroContent"
   }, [_c("h1", {
     staticClass: "p-welcome__heroTitle"
-  }, [_vm._v("STEP")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("TADORI")]), _vm._v(" "), _c("p", {
     staticClass: "p-welcome__heroSub"
-  }, [_vm._v("あなたの人生のSTEPを共有しよう")])])]);
+  }, [_vm._v("あなたがたどった学びを、次の人へ")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -4592,7 +4592,7 @@ var staticRenderFns = [function () {
     staticClass: "p-welcome__main"
   }, [_c("h2", {
     staticClass: "p-welcome__sectionHead"
-  }, [_vm._v("すべてSTEPが解決します！")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("すべてTADORIが解決します！")]), _vm._v(" "), _c("div", {
     staticClass: "p-welcome__problemLists"
   }, [_c("div", {
     staticClass: "p-welcome__problemList p-welcome__problemList--highlighted"
@@ -4608,7 +4608,7 @@ var staticRenderFns = [function () {
     staticClass: "p-welcome__listHead p-welcome__listHead--highlighted"
   }, [_vm._v("迷ったら、先輩の学習順序を真似できる！")])]), _vm._v(" "), _c("p", {
     staticClass: "p-welcome__listText"
-  }, [_vm._v("STEPでは、先輩学習者たちがたどった「学習の順序」をそのまま参考にできるため、何から始めればいいか迷うことはありません。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("TADORIでは、先輩学習者たちがたどった「学習の順序」をそのまま参考にできるため、何から始めればいいか迷うことはありません。")])]), _vm._v(" "), _c("div", {
     staticClass: "p-welcome__problemList p-welcome__problemList--highlighted"
   }, [_c("img", {
     staticClass: "p-welcome__problemImg",
@@ -4622,7 +4622,7 @@ var staticRenderFns = [function () {
     staticClass: "p-welcome__listHead p-welcome__listHead--highlighted"
   }, [_vm._v("進捗を見える化して挫折を防ぐ！")])]), _vm._v(" "), _c("p", {
     staticClass: "p-welcome__listText"
-  }, [_vm._v("STEPでは、自分の学習進捗を一目で確認でき、他人の進捗も見られるため、独学でもモチベーションを維持しながら学習を続けられます。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("TADORIでは、自分の学習進捗を一目で確認でき、他人の進捗も見られるため、独学でもモチベーションを維持しながら学習を続けられます。")])]), _vm._v(" "), _c("div", {
     staticClass: "p-welcome__problemList p-welcome__problemList--highlighted"
   }, [_c("img", {
     staticClass: "p-welcome__problemImg",
@@ -4636,7 +4636,7 @@ var staticRenderFns = [function () {
     staticClass: "p-welcome__listHead p-welcome__listHead--highlighted"
   }, [_vm._v("あなたに合った教材と学習順序を提示！")])]), _vm._v(" "), _c("p", {
     staticClass: "p-welcome__listText"
-  }, [_vm._v("STEPは、目的やレベルに合わせた最適な学習順序（STEP）を提案。初心者から上級者まで、自分にぴったりの学習計画で効率よく学べます。")])])])])]);
+  }, [_vm._v("TADORIは、目的やレベルに合わせた最適な学習順序を提案。初心者から上級者まで、自分にぴったりの学習計画で効率よく学べます。")])])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
