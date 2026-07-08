@@ -9,8 +9,8 @@
 
 <p>////////////////////////////////////////</p>
 <p>
-    STEPカスタマーセンター<br>
+    TADORIカスタマーセンター<br>
     URL: {{ env('APP_URL') }}<br>
-    E-mail: taroyamadataroyamada20000101@gmail.com
+    E-mail: contact@yk-lab.jp
 </p>
 <p>////////////////////////////////////////</p>
